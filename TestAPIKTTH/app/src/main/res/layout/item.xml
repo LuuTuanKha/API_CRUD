@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_bg">
+
+        <TextView
+            android:id="@+id/item_Name"
+            android:layout_width="200dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_Class"
+            android:layout_width="200dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="10dp"
+            android:text="Class"
+            app:layout_constraintEnd_toEndOf="@+id/item_Name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/item_Name"
+            app:layout_constraintTop_toBottomOf="@+id/item_Name" />
+
+        <TextView
+            android:id="@+id/item_Point"
+            android:layout_width="200dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="10dp"
+            android:text="Point"
+            app:layout_constraintEnd_toEndOf="@+id/item_Class"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/item_Class"
+            app:layout_constraintTop_toBottomOf="@+id/item_Class" />
+
+        <Button
+            android:id="@+id/item_btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/btn_bg_primary"
+            android:text="EDIT"
+            app:backgroundTint="#FF5722"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/item_btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_bg_primary"
+            android:text="DELETE"
+            app:backgroundTint="#FF5722"
+            app:layout_constraintEnd_toEndOf="@+id/item_btn_edit"
+            app:layout_constraintStart_toStartOf="@+id/item_btn_edit"
+            app:layout_constraintTop_toBottomOf="@+id/item_btn_edit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
